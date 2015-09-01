@@ -26,3 +26,6 @@ If X11 forwarding is needed install xauth, logout and log-back in::
     vagrant -XY ssh
 
 A 32-bit version of the CentOS VM is available in the 32_bit branch
+
+If used to build TRMM RSL make sure flex is install before running `conda
+build`.  `sudo yum install flex` will do the trick
