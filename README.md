@@ -18,3 +18,11 @@ To use:
 It is recommended that the recipes for the conda packages which are to be 
 build be placed in a directory names **recipes**. In the VM this directory 
 can be acces in the /vagrant/recipes directory.
+
+If X11 forwarding is needed install xauth, logout and log-back in::
+    
+    sudo yum install xorg-xauth xorg-x11-xauth xeyes
+    logout
+    vagrant -XY ssh
+
+A 32-bit version of the CentOS VM is available in the 32_bit branch
